@@ -7,18 +7,9 @@ public class guessTheNumberV3 {
         protected static int randNum;
 
         //gets user's name
-        public static void setName()
+        public static void setName(String input)
         {
-            Scanner scan = new Scanner(System.in);
-            try {
-                System.out.println("Greetings! Please enter your name: ");
-                name = scan.nextLine();
-            }
-            catch (Exception e)
-            {
-                System.out.println("Sorry, I had an issue getting your name. Good-bye.");
-                System.exit(-1);
-            }
+            name = input;
         }
 
         //returns user's name
@@ -28,17 +19,9 @@ public class guessTheNumberV3 {
         }
 
         //sets user's guess
-        public static void setNum()
+        public static void setNum(int input)
         {
-            Scanner scan = new Scanner(System.in);
-            System.out.println("OK " + getName() + ", I am thinking of a number between 1 and 20. To win, you must guess my number within 6 tries\nGo ahead and take a guess what it is (invalid input does not count as guesses): ");
-            String input = scan.nextLine();
-            try {
-                num = Integer.parseInt(input);
-            } catch (Exception e) {
-                System.out.println("Oops, invalid input. Good-bye.");
-                System.exit(-1);
-            }
+            num = input;
 
             //sets random number used by computer
             randNum = (int) ((Math.random() * (20 - 1)) + 1);
@@ -53,11 +36,30 @@ public class guessTheNumberV3 {
         //plays the game with user's info
         public static void playGame()
         {
-            setName();
-            setNum();
-
             Scanner scan = new Scanner(System.in);
             String input = "";
+
+            try {
+                System.out.println("Greetings! Please enter your name: ");
+                name = scan.nextLine();
+                setName(name);
+            }
+            catch (Exception e)
+            {
+                System.out.println("Sorry, I had an issue getting your name. Good-bye.");
+                System.exit(-1);
+            }
+
+            System.out.println("OK " + getName() + ", I am thinking of a number between 1 and 20. To win, you must guess my number within 6 tries\nGo ahead and take a guess what it is (invalid input does not count as guesses): ");
+            input = scan.nextLine();
+            try {
+                num = Integer.parseInt(input);
+                setNum(num);
+            } catch (Exception e) {
+                System.out.println("Oops, invalid input. Good-bye.");
+                System.exit(-1);
+            }
+
             boolean done = false;
             do {
 

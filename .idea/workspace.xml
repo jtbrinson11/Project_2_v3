@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c2e88416-d7fc-4344-94f2-b94b26d5825d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Project_2_v3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Project_2_v3.iml" afterDir="false" />
+    <list default="true" id="c2e88416-d7fc-4344-94f2-b94b26d5825d" name="Changes" comment="Adjusted program to include methods">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/java/guessTheNumberV3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/guessTheNumberV3.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,6 +47,14 @@
       <option name="presentableId" value="Default" />
       <updated>1654694649477</updated>
     </task>
+    <task id="LOCAL-00001" summary="Migrated files from Project_2_v2 to this project">
+      <created>1654695446058</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1654695446058</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -59,5 +67,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Migrated files from Project_2_v2 to this project" />
+    <MESSAGE value="Adjusted program to include methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adjusted program to include methods" />
   </component>
 </project>
